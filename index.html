@@ -6,23 +6,31 @@
         <title>Task manager</title>
         <link rel="stylesheet" href="style.css" />
 		<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
             <h1 id="header-title">TASK MANAGER</h1>
         </header>
-        <div class="task-display">
+
+        <div class="task-display" id="task-display">
             <div id="task-example" class="task">
                 <input type="checkbox" name="task1">
                 <label>Make a task manager</label>
 				</input>
             </div>
-            <div class="task-display">
-                <div id="task-example2" class="task">
-                    <input type="checkbox" name="task1">
-                    <label>idk22 testing something</label>
-                    </input>
-                </div>
+
+            <div id="task-example2" class="task">
+                <input type="checkbox" name="task1">
+                <label>idk22 testing something</label>
+                </input>
+            </div>
         </div>
+
+        <div class="tasksend">
+            <input type="text" name="task-form" id="task-form">
+            <button id="send">Send</button>
+        </div>
+
     </body>
 </html>
